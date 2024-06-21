@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #282828;
+    color: white;
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header > h1 {
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-top: 80px;
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#calc-display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #d5d5d5;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn.operator {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.btn.operator:hover {
+    background-color: #e07c00;
+}
+
+.btn.clear {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.btn.clear:hover {
+    background-color: #e04343;
+}
+
+footer {
+    width: 100%;
+    color: #b0abab;
+    text-align: center;
+    padding: 10px 0;
+    background: #282828;
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer > p > span {
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+}
